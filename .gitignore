@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Next.js build & export
+.next/
+out/
+
+# Logs & debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env (keep `.env*.example` if you add templates)
+.env
+.env.*
+!.env*.example
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+*.swp
+*.swo
