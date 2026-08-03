@@ -17,7 +17,11 @@ const sans = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "彭文静 | 泰康保险大厦租赁顾问",
+  metadataBase: new URL("https://pengwenjing.com"),
+  title: {
+    default: "彭文静 | 泰康保险大厦租赁顾问",
+    template: "%s",
+  },
   description: "陆家嘴泰康保险大厦办公租赁顾问彭文静。位置、空间、平面图与看楼预约。",
 };
 

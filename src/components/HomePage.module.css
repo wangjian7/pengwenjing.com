@@ -20,6 +20,14 @@
   animation: fadeDown 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+.navCluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.55rem 1rem;
+}
+
 .brand {
   display: inline-flex;
   align-items: baseline;
@@ -604,6 +612,42 @@
   }
 }
 
+.page[data-locale="en"] .heroBrand,
+.page[data-locale="es"] .heroBrand,
+.page[data-locale="en"] .brandName,
+.page[data-locale="es"] .brandName,
+.page[data-locale="en"] .contact h2,
+.page[data-locale="es"] .contact h2 {
+  letter-spacing: 0.04em;
+}
+
+.page[data-locale="en"] .heroTitle,
+.page[data-locale="es"] .heroTitle {
+  letter-spacing: 0.08em;
+}
+
+.page[data-locale="en"] .heroLine,
+.page[data-locale="es"] .heroLine {
+  letter-spacing: 0.06em;
+}
+
+.page[data-locale="ja"] .heroBrand,
+.page[data-locale="ko"] .heroBrand {
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .navCluster {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 640px) {
   .navLinks a {
     padding: 0.45rem 0.45rem;
@@ -624,6 +668,16 @@
 
   .heroLine {
     letter-spacing: 0.12em;
+  }
+
+  .page[data-locale="en"] .heroBrand,
+  .page[data-locale="es"] .heroBrand {
+    letter-spacing: 0.03em;
+  }
+
+  .page[data-locale="en"] .heroTitle,
+  .page[data-locale="es"] .heroTitle {
+    letter-spacing: 0.05em;
   }
 
   .planFrame {
