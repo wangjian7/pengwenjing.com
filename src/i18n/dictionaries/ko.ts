@@ -2,9 +2,9 @@ import type { Dictionary } from "./types";
 
 const ko: Dictionary = {
   meta: {
-    title: "펑원징 | 태강보험빌딩 임대 어드바이저",
+    title: "彭文静 | 태강보험빌딩 임대 어드바이저",
     description:
-      "루자쭈이 태강보험빌딩 오피스 임대 어드바이저 펑원징. 위치, 공간, 평면도, 방문 예약.",
+      "루자쭈이 태강보험빌딩 오피스 임대 어드바이저 彭文静. 위치, 공간, 평면도, 방문 예약.",
   },
   brand: {
     name: "彭文静",
