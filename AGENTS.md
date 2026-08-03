@@ -3,9 +3,10 @@
 ## Cursor Cloud specific instructions
 
 This repo is a single static **Next.js 16 / React 19** site (`pengwenjing.com`) — a
-one-page Chinese-language real-estate leasing landing page for 泰康保险大厦
-(Taikang Insurance Tower). There is no backend, database, or authentication;
-everything is a statically exported front end.
+one-page multilingual real-estate leasing landing page for 泰康保险大厦
+(Taikang Insurance Tower). Locales live under `/zh`, `/en`, `/ja`, `/ko`, `/es`
+(copy in `src/i18n/dictionaries/*`). There is no backend, database, or
+authentication; everything is a statically exported front end.
 
 ### Services
 
@@ -25,5 +26,7 @@ Scripts live in `package.json`; do not duplicate them elsewhere.
 - `next.config.ts` sets `output: "export"` with `images.unoptimized: true`, so this
   is a fully static site — there are no API routes or server components at runtime.
 - Page images are served from `public/assets/*` and referenced as `/assets/<name>`
-  in `src/app/page.tsx`. The top-level `assets/` folder is a duplicate source copy;
-  the ones actually served are under `public/assets/`.
+  in `src/components/HomePage.tsx`. The top-level `assets/` folder is a duplicate
+  source copy; the ones actually served are under `public/assets/`.
+- Cloudflare Pages gets `/ → /zh` via `public/_redirects`. Root `app/page.tsx`
+  also redirects to `/zh` for local/dev.
