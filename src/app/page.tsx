@@ -24,40 +24,40 @@ const chapters = [
     kicker: "01",
     title: "坐标",
     line: "世纪大道旁，轨交直达。",
-    image: "img_03.jpg",
-    position: "center 28%",
+    image: "chapter-place.jpg",
+    position: "center center",
   },
   {
     id: "life",
     kicker: "02",
     title: "配套",
     line: "商业、枢纽、车库一体。",
-    image: "img_04.jpg",
-    position: "center 22%",
+    image: "chapter-life.jpg",
+    position: "center 20%",
   },
   {
     id: "lobby",
     kicker: "03",
     title: "大堂",
     line: "第一眼，就是总部气场。",
-    image: "img_05.jpg",
-    position: "center 24%",
+    image: "chapter-lobby.jpg",
+    position: "center center",
   },
   {
     id: "standard",
     kicker: "04",
     title: "标准",
     line: "行政层、交易层，各就其位。",
-    image: "img_06.jpg",
-    position: "center 26%",
+    image: "chapter-standard.jpg",
+    position: "center center",
   },
 ];
 
 const plans = [
-  { title: "立面分区", image: "img_07.jpg" },
-  { title: "高区平面", image: "img_08.jpg" },
-  { title: "中区平面", image: "img_09.jpg" },
-  { title: "低区平面", image: "img_10.jpg" },
+  { title: "立面分区", image: "plan-1.jpg" },
+  { title: "高区平面", image: "plan-2.jpg" },
+  { title: "中区平面", image: "plan-3.jpg" },
+  { title: "低区平面", image: "plan-4.jpg" },
 ];
 
 const specs = [
@@ -89,7 +89,7 @@ export default function Home() {
       <section id="top" className={styles.hero}>
         <div className={styles.heroMedia} aria-hidden="true">
           <Image
-            src={asset("img_02.jpg")}
+            src={asset("hero-tower.jpg")}
             alt=""
             fill
             priority
@@ -130,7 +130,7 @@ export default function Home() {
       <section id="building" className={styles.chapters}>
         <header className={styles.sectionLead}>
           <p className={styles.kicker}>楼宇</p>
-          <h2>少说一点，让空间自己说话。</h2>
+          <h2>空间自己会说话。</h2>
         </header>
 
         {chapters.map((chapter) => (
@@ -156,7 +156,7 @@ export default function Home() {
       <section id="plans" className={styles.plans}>
         <header className={styles.sectionLead}>
           <p className={styles.kicker}>平面</p>
-          <h2>分区清晰，一眼能懂。</h2>
+          <h2>分区一目了然。</h2>
         </header>
         <div className={styles.planRail}>
           {plans.map((plan) => (
@@ -173,7 +173,7 @@ export default function Home() {
       <section className={styles.specs} aria-label="技术参数">
         <header className={styles.sectionLead}>
           <p className={styles.kicker}>参数</p>
-          <h2>需要核对的，都在这里。</h2>
+          <h2>关键规格。</h2>
         </header>
         <dl className={styles.specList}>
           {specs.map(([label, value]) => (
