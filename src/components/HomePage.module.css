@@ -1,0 +1,701 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  color: var(--ink);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.05rem clamp(1rem, 4vw, 2.5rem);
+  color: #f2f5f7;
+  mix-blend-mode: difference;
+  animation: fadeDown 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.navCluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.55rem 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.65rem;
+}
+
+.brandName {
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.brandMeta {
+  opacity: 0.55;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.navLinks {
+  display: flex;
+  gap: 0.15rem;
+  opacity: 0.82;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.navLinks a {
+  padding: 0.5rem 0.75rem;
+  transition: opacity 200ms ease;
+}
+
+.navLinks a:hover {
+  opacity: 1;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 100svh;
+  padding:
+    calc(5.5rem + env(safe-area-inset-top, 0px))
+    clamp(1.25rem, 5vw, 4rem)
+    clamp(2.5rem, 6vw, 4.5rem);
+  overflow: hidden;
+  color: #f4f7f9;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #0b121a;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center 42%;
+  transform: scale(1.08);
+  animation: heroDrift 20s ease-in-out infinite alternate;
+}
+
+.heroVeil {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 45% at 68% 28%, rgba(28, 77, 110, 0.2), transparent 62%),
+    linear-gradient(90deg, rgba(8, 14, 22, 0.55) 0%, rgba(8, 14, 22, 0.12) 55%, rgba(8, 14, 22, 0.28) 100%),
+    linear-gradient(180deg, rgba(8, 14, 22, 0.2) 0%, rgba(8, 14, 22, 0.18) 42%, rgba(8, 14, 22, 0.78) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 28rem;
+  animation: riseIn 1100ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both;
+}
+
+.heroBrand {
+  margin-bottom: 0.7rem;
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(2.6rem, 7.2vw, 4.8rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+.heroTitle {
+  margin: 0;
+  color: rgba(244, 247, 249, 0.88);
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(1rem, 2.1vw, 1.25rem);
+  font-weight: 400;
+  letter-spacing: 0.38em;
+}
+
+.heroLine {
+  margin-top: 0.85rem;
+  color: rgba(244, 247, 249, 0.68);
+  font-size: 0.92rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.85rem;
+}
+
+.cta,
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  transition:
+    transform 200ms ease,
+    background 200ms ease,
+    color 200ms ease,
+    opacity 200ms ease;
+}
+
+.cta {
+  padding: 0 1.4rem;
+  background: #f4f7f9;
+  color: var(--ink);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  background: #fff;
+}
+
+.ghost {
+  padding: 0 0.1rem;
+  color: rgba(244, 247, 249, 0.86);
+  opacity: 0.9;
+  box-shadow: inset 0 -1px 0 rgba(244, 247, 249, 0.45);
+}
+
+.ghost:hover {
+  opacity: 1;
+  box-shadow: inset 0 -1px 0 #f4f7f9;
+}
+
+.scrollHint {
+  position: absolute;
+  right: clamp(1.25rem, 5vw, 4rem);
+  bottom: 1.8rem;
+  z-index: 1;
+  width: 1px;
+  height: 3.2rem;
+  background: rgba(244, 247, 249, 0.2);
+  animation: fadeDown 1200ms ease 700ms both;
+}
+
+.scrollHint span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 1rem;
+  background: #f4f7f9;
+  transform: translateX(-50%);
+  animation: scrollPulse 2.2s ease-in-out infinite;
+}
+
+.signals {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: clamp(2.25rem, 5vw, 3.75rem) clamp(1.25rem, 4vw, 2rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.signal {
+  padding: 0.35rem 0.85rem;
+  text-align: center;
+}
+
+.signal + .signal {
+  border-left: 1px solid var(--line);
+}
+
+.signal strong {
+  display: block;
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.signal span {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.sectionLead {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2rem);
+}
+
+.kicker {
+  color: var(--bronze);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.sectionLead h2 {
+  max-width: 16ch;
+  margin-top: 0.55rem;
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+}
+
+.chapters {
+  padding-top: clamp(3.25rem, 7vw, 5.5rem);
+}
+
+.chapter {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 0;
+  width: min(100%, 1280px);
+  margin: clamp(1.5rem, 3.5vw, 2.4rem) auto 0;
+  min-height: clamp(380px, 58vh, 560px);
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
+}
+
+.chapter:nth-of-type(even) {
+  grid-template-columns: 0.6fr 1.4fr;
+}
+
+.chapter:nth-of-type(even) .chapterMedia {
+  order: 2;
+}
+
+.chapter:nth-of-type(even) .chapterCopy {
+  order: 1;
+}
+
+.chapterMedia {
+  position: relative;
+  min-height: clamp(320px, 52vh, 540px);
+  overflow: hidden;
+  background: #121820;
+}
+
+.chapterMedia img {
+  object-fit: cover;
+  transition: transform 1.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.chapter:hover .chapterMedia img {
+  transform: scale(1.04);
+}
+
+.chapterCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.35rem, 3.5vw, 3rem);
+}
+
+.chapterCopy span {
+  color: var(--accent-soft);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+}
+
+.chapterCopy h3 {
+  margin-top: 0.65rem;
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+}
+
+.chapterCopy p {
+  max-width: 14ch;
+  margin-top: 0.85rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+.plans {
+  padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.planRail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(230px, 270px);
+  gap: 0.9rem;
+  width: 100%;
+  margin-top: 1.75rem;
+  padding: 0 clamp(1.25rem, 4vw, 2rem) 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.plan {
+  scroll-snap-align: start;
+}
+
+.planFrame {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  background: #141b22;
+}
+
+.planFrame img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.plan figcaption {
+  margin-top: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+}
+
+.specs {
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: clamp(2.75rem, 6vw, 4.75rem) clamp(1.25rem, 4vw, 2rem);
+}
+
+.specList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.specRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.specRow:nth-child(odd) {
+  padding-right: 1.5rem;
+}
+
+.specRow:nth-child(even) {
+  padding-left: 1.5rem;
+}
+
+.specRow dt {
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.specRow dd {
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  width: min(100%, var(--measure));
+  margin: 0 auto clamp(2rem, 5vw, 3rem);
+  padding: clamp(2.75rem, 6vw, 4.5rem) clamp(1.25rem, 4vw, 2rem);
+  background:
+    linear-gradient(135deg, rgba(28, 77, 110, 0.09), transparent 55%),
+    linear-gradient(180deg, rgba(244, 247, 249, 0.72), rgba(213, 222, 230, 0.58));
+}
+
+.contact h2 {
+  margin-top: 0.55rem;
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(2.1rem, 4.2vw, 3.1rem);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.contactRole {
+  margin-top: 0.75rem;
+  color: var(--accent);
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+}
+
+.contactHint {
+  margin-top: 1.1rem;
+  color: var(--ink-soft);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+.contactDetails {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+}
+
+.contactDetails a,
+.contactDetails p {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.contactDetails span {
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.contactDetails strong {
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.contactDetails .cta {
+  width: fit-content;
+  margin-top: 0.4rem;
+  background: var(--ink);
+  color: #f4f7f9;
+}
+
+.contactDetails .cta:hover {
+  background: var(--accent);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 1.35rem clamp(1.25rem, 4vw, 2rem) 2.4rem;
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroDrift {
+  from {
+    transform: scale(1.08) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: scale(1.14) translate3d(0, -1.5%, 0);
+  }
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(1.35rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .signals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.25rem;
+  }
+
+  .signal:nth-child(3),
+  .signal:nth-child(4) {
+    border-top: 0;
+  }
+
+  .signal:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .signal:nth-child(even) {
+    border-left: 1px solid var(--line);
+  }
+
+  .chapter,
+  .chapter:nth-of-type(even) {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .chapter:nth-of-type(even) .chapterMedia,
+  .chapter:nth-of-type(even) .chapterCopy {
+    order: initial;
+  }
+
+  .chapterMedia {
+    min-height: 280px;
+  }
+
+  .chapterCopy {
+    padding: 1.2rem 0.15rem 0.35rem;
+  }
+
+  .specList {
+    grid-template-columns: 1fr;
+  }
+
+  .specRow:nth-child(odd),
+  .specRow:nth-child(even) {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page[data-locale="en"] .heroBrand,
+.page[data-locale="es"] .heroBrand,
+.page[data-locale="en"] .brandName,
+.page[data-locale="es"] .brandName,
+.page[data-locale="en"] .contact h2,
+.page[data-locale="es"] .contact h2 {
+  letter-spacing: 0.04em;
+}
+
+.page[data-locale="en"] .heroTitle,
+.page[data-locale="es"] .heroTitle {
+  letter-spacing: 0.08em;
+}
+
+.page[data-locale="en"] .heroLine,
+.page[data-locale="es"] .heroLine {
+  letter-spacing: 0.06em;
+}
+
+.page[data-locale="ja"] .heroBrand,
+.page[data-locale="ko"] .heroBrand {
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .navCluster {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
+  .navLinks a {
+    padding: 0.45rem 0.45rem;
+    letter-spacing: 0.08em;
+  }
+
+  .heroImage {
+    object-position: center 38%;
+  }
+
+  .heroBrand {
+    letter-spacing: 0.12em;
+  }
+
+  .heroTitle {
+    letter-spacing: 0.2em;
+  }
+
+  .heroLine {
+    letter-spacing: 0.12em;
+  }
+
+  .page[data-locale="en"] .heroBrand,
+  .page[data-locale="es"] .heroBrand {
+    letter-spacing: 0.03em;
+  }
+
+  .page[data-locale="en"] .heroTitle,
+  .page[data-locale="es"] .heroTitle {
+    letter-spacing: 0.05em;
+  }
+
+  .planFrame {
+    height: 290px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroImage {
+    animation: none;
+    transform: none;
+  }
+
+  .scrollHint span {
+    animation: none;
+  }
+
+  .chapter:hover .chapterMedia img {
+    transform: none;
+  }
+}

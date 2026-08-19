@@ -1,6 +1,22 @@
 :root {
-  --background: #030712;
-  --foreground: #edf7ff;
+  --bg: #e7ecef;
+  --bg-deep: #d5dee6;
+  --ink: #101820;
+  --ink-soft: rgba(16, 24, 32, 0.62);
+  --ink-faint: rgba(16, 24, 32, 0.38);
+  --paper: #f4f7f9;
+  --line: rgba(16, 24, 32, 0.12);
+  --accent: #1c4d6e;
+  --accent-soft: #6f8fa6;
+  --bronze: #9a7b4f;
+  --hero-veil: linear-gradient(
+    180deg,
+    rgba(10, 18, 28, 0.18) 0%,
+    rgba(10, 18, 28, 0.42) 48%,
+    rgba(10, 18, 28, 0.78) 100%
+  );
+  --space: clamp(1.25rem, 4vw, 3.5rem);
+  --measure: 1120px;
 }
 
 html {
@@ -16,14 +32,18 @@ body {
 
 body {
   min-height: 100%;
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(111, 143, 166, 0.28), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 95% 8%, rgba(154, 123, 79, 0.16), transparent 50%),
+    linear-gradient(180deg, var(--bg) 0%, var(--paper) 42%, var(--bg-deep) 100%);
   font-family:
+    var(--font-sans),
     "PingFang SC",
+    "Hiragino Sans GB",
     "Microsoft YaHei",
-    "Helvetica Neue",
-    Arial,
     sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,8 +70,21 @@ img {
   max-width: 100%;
 }
 
+::selection {
+  background: rgba(28, 77, 110, 0.18);
+  color: var(--ink);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

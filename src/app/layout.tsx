@@ -1,7 +1,23 @@
 import type { Metadata } from "next";
+import { Noto_Serif_SC, Outfit } from "next/font/google";
 import "./globals.css";
 
+const display = Noto_Serif_SC({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const sans = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pengwenjing.com"),
   title: "彭文静 | 泰康保险大厦租赁顾问 · 陆家嘴写字楼租赁",
   description:
     "泰康保险大厦（陆家嘴）写字楼租赁顾问彭文静。90,000㎡建筑面积、2/9号线双线地铁、41层甲级写字楼。提供看楼、租赁方案、平面图咨询。联系电话 15021149003（微信同号）。",
@@ -52,7 +68,7 @@ const realEstateAgentJsonLd = {
   url: "https://pengwenjing.com",
   telephone: "+8615021149003",
   email: "pwj_003@126.com",
-  image: "https://pengwenjing.com/assets/cover.jpg",
+  image: "https://pengwenjing.com/assets/hero-tower.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "世纪大道",
@@ -115,7 +131,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="zh-CN" className={`${display.variable} ${sans.variable}`}>
       <body>
         <script
           type="application/ld+json"
