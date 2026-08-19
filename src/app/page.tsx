@@ -6,8 +6,9 @@ const asset = (name: string) => `/assets/${name}`;
 const contact = {
   name: "彭文静",
   role: "泰康保险大厦租赁销售经理",
-  phone: "请补充手机号 / 微信号",
-  email: "请补充邮箱",
+  phone: "15021149003",
+  wechat: "15021149003（微信同号）",
+  email: "pwj_003@126.com",
   hotline: "021-68599875 / 021-68599876",
 };
 
@@ -239,11 +240,11 @@ export default function Home() {
         <div className={styles.contactCard}>
           <span>{contact.role}</span>
           <strong>{contact.name}</strong>
-          <p>手机 / 微信：{contact.phone}</p>
-          <p>邮箱：{contact.email}</p>
+          <p>手机 / 微信：<a href="tel:15021149003">{contact.wechat}</a></p>
+          <p>邮箱：<a href="mailto:pwj_003@126.com">{contact.email}</a></p>
           <p>项目租赁热线：{contact.hotline}</p>
-          <a className={styles.primaryButton} href="tel:02168599875">
-            拨打租赁热线
+          <a className={styles.primaryButton} href="tel:15021149003">
+            联系彭文静
           </a>
         </div>
       </section>
