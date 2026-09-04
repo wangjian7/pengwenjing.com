@@ -35,8 +35,8 @@ const en: Dictionary = {
     ],
   },
   leed: {
-    alt: "LEED Gold pre-certification",
-    caption: "LEED Gold pre-certification",
+    alt: "Taikang Insurance Tower LEED Platinum certificate",
+    caption: "LEED Platinum · November 2025",
   },
   building: {
     kicker: "Building",

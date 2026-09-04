@@ -34,8 +34,8 @@ const zh: Dictionary = {
     ],
   },
   leed: {
-    alt: "LEED 金级预认证",
-    caption: "LEED 金级预认证",
+    alt: "泰康保险大厦 LEED 铂金认证证书",
+    caption: "LEED 铂金认证 · 2025年11月",
   },
   building: {
     kicker: "楼宇",

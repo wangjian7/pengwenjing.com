@@ -35,8 +35,8 @@ const ko: Dictionary = {
     ],
   },
   leed: {
-    alt: "LEED 골드 예비 인증",
-    caption: "LEED 골드 예비 인증",
+    alt: "태강보험빌딩 LEED 플래티넘 인증서",
+    caption: "LEED 플래티넘 인증 · 2025년 11월",
   },
   building: {
     kicker: "빌딩",

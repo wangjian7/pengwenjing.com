@@ -75,8 +75,8 @@ export function HomePage({ locale, dict }: Props) {
         <Image
           src={asset("leed.png")}
           alt={dict.leed.alt}
-          width={720}
-          height={280}
+          width={1600}
+          height={1257}
           className={styles.leedMark}
         />
         <p>{dict.leed.caption}</p>

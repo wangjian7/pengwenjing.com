@@ -35,8 +35,8 @@ const ja: Dictionary = {
     ],
   },
   leed: {
-    alt: "LEED ゴールド予備認証",
-    caption: "LEED ゴールド予備認証",
+    alt: "泰康保険大厦 LEED プラチナ認証書",
+    caption: "LEED プラチナ認証 · 2025年11月",
   },
   building: {
     kicker: "ビル",
