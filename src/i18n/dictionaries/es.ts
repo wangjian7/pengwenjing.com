@@ -66,14 +66,6 @@ const es: Dictionary = {
         image: "chapter-lobby.jpg",
         position: "center center",
       },
-      {
-        id: "standard",
-        kicker: "04",
-        title: "Estándar",
-        line: "Plantas ejecutivas y de trading, cada una en su sitio.",
-        image: "chapter-standard.jpg",
-        position: "center center",
-      },
     ],
   },
   gallery: {

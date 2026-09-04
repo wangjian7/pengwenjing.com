@@ -66,14 +66,6 @@ const ko: Dictionary = {
         image: "chapter-lobby.jpg",
         position: "center center",
       },
-      {
-        id: "standard",
-        kicker: "04",
-        title: "기준",
-        line: "임원층과 트레이딩층, 각각 제자리.",
-        image: "chapter-standard.jpg",
-        position: "center center",
-      },
     ],
   },
   gallery: {

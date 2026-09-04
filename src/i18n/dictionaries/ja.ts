@@ -66,14 +66,6 @@ const ja: Dictionary = {
         image: "chapter-lobby.jpg",
         position: "center center",
       },
-      {
-        id: "standard",
-        kicker: "04",
-        title: "基準",
-        line: "行政階とトレーディング階、それぞれに。",
-        image: "chapter-standard.jpg",
-        position: "center center",
-      },
     ],
   },
   gallery: {

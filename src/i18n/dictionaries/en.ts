@@ -66,14 +66,6 @@ const en: Dictionary = {
         image: "chapter-lobby.jpg",
         position: "center center",
       },
-      {
-        id: "standard",
-        kicker: "04",
-        title: "Standard",
-        line: "Executive and trading floors, each in place.",
-        image: "chapter-standard.jpg",
-        position: "center center",
-      },
     ],
   },
   gallery: {

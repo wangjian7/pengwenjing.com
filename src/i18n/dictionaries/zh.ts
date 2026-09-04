@@ -65,14 +65,6 @@ const zh: Dictionary = {
         image: "chapter-lobby.jpg",
         position: "center center",
       },
-      {
-        id: "standard",
-        kicker: "04",
-        title: "标准",
-        line: "行政层、交易层，各就其位。",
-        image: "chapter-standard.jpg",
-        position: "center center",
-      },
     ],
   },
   gallery: {
