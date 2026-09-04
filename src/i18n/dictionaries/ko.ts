@@ -78,14 +78,14 @@ const ko: Dictionary = {
   },
   gallery: {
     kicker: "실경",
-    title: "엘리베이터홀과 화장실.",
+    title: "엘리베이터홀, 화장실, 사무층.",
     aria: "빌딩 실경 포토월",
     items: [
       { title: "엘리베이터홀", image: "gallery-lift.jpg" },
       { title: "임원 화장실", image: "gallery-wc.jpg" },
-      { title: "1층 로비", image: "gallery-lobby.jpg" },
-      { title: "로비 디테일", image: "gallery-lobby-2.jpg" },
-      { title: "상업 아트리움", image: "gallery-atrium.jpg" },
+      { title: "기준층 실경", image: "gallery-floor.jpg" },
+      { title: "인테리어 오피스", image: "gallery-fitout-1.jpg" },
+      { title: "인테리어와 전망", image: "gallery-fitout-2.jpg" },
     ],
   },
   plans: {
@@ -96,6 +96,9 @@ const ko: Dictionary = {
       { title: "고층 평면", image: "img_08.jpg" },
       { title: "중층 평면", image: "img_09.jpg" },
       { title: "저층 평면", image: "img_10.jpg" },
+      { title: "21층 평면", image: "plan-21f.jpg" },
+      { title: "기준층 분할", image: "plan-typical.jpg" },
+      { title: "사무 레이아웃 예시", image: "plan-layout.jpg" },
     ],
   },
   specs: {

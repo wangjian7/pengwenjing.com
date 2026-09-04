@@ -78,14 +78,14 @@ const en: Dictionary = {
   },
   gallery: {
     kicker: "Gallery",
-    title: "Lift lobby and washrooms.",
+    title: "Lift lobby, washrooms, and office floors.",
     aria: "Building photo wall",
     items: [
       { title: "Lift lobby", image: "gallery-lift.jpg" },
       { title: "Executive washroom", image: "gallery-wc.jpg" },
-      { title: "Ground-floor lobby", image: "gallery-lobby.jpg" },
-      { title: "Lobby detail", image: "gallery-lobby-2.jpg" },
-      { title: "Retail atrium", image: "gallery-atrium.jpg" },
+      { title: "Typical floor", image: "gallery-floor.jpg" },
+      { title: "Fitted office", image: "gallery-fitout-1.jpg" },
+      { title: "Fitted office and view", image: "gallery-fitout-2.jpg" },
     ],
   },
   plans: {
@@ -96,6 +96,9 @@ const en: Dictionary = {
       { title: "High-zone plan", image: "img_08.jpg" },
       { title: "Mid-zone plan", image: "img_09.jpg" },
       { title: "Low-zone plan", image: "img_10.jpg" },
+      { title: "Level 21 plan", image: "plan-21f.jpg" },
+      { title: "Typical split", image: "plan-typical.jpg" },
+      { title: "Sample office layout", image: "plan-layout.jpg" },
     ],
   },
   specs: {

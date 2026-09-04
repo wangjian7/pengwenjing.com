@@ -137,9 +137,13 @@ export function HomePage({ locale, dict }: Props) {
         <div className={styles.planRail}>
           {dict.plans.items.map((plan) => (
             <figure key={plan.title} className={styles.plan}>
-              <div className={styles.planFrame}>
-                <Image src={asset(plan.image)} alt={plan.title} fill sizes="50vw" />
-              </div>
+              <Image
+                src={asset(plan.image)}
+                alt={plan.title}
+                width={1416}
+                height={1274}
+                sizes="(max-width: 760px) 100vw, 50vw"
+              />
               <figcaption>{plan.title}</figcaption>
             </figure>
           ))}

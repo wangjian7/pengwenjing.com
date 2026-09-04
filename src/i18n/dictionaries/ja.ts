@@ -78,14 +78,14 @@ const ja: Dictionary = {
   },
   gallery: {
     kicker: "実景",
-    title: "エレベーターホールとトイレ。",
+    title: "エレベーターホール、トイレ、執務階。",
     aria: "ビル実景フォトウォール",
     items: [
       { title: "エレベーターホール", image: "gallery-lift.jpg" },
       { title: "エグゼクティブトイレ", image: "gallery-wc.jpg" },
-      { title: "1階ロビー", image: "gallery-lobby.jpg" },
-      { title: "ロビーディテール", image: "gallery-lobby-2.jpg" },
-      { title: "商業アトリウム", image: "gallery-atrium.jpg" },
+      { title: "基準階実景", image: "gallery-floor.jpg" },
+      { title: "セットアップオフィス", image: "gallery-fitout-1.jpg" },
+      { title: "セットアップと眺望", image: "gallery-fitout-2.jpg" },
     ],
   },
   plans: {
@@ -96,6 +96,9 @@ const ja: Dictionary = {
       { title: "高区平面", image: "img_08.jpg" },
       { title: "中区平面", image: "img_09.jpg" },
       { title: "低区平面", image: "img_10.jpg" },
+      { title: "21階平面", image: "plan-21f.jpg" },
+      { title: "基準階分割", image: "plan-typical.jpg" },
+      { title: "オフィスレイアウト例", image: "plan-layout.jpg" },
     ],
   },
   specs: {

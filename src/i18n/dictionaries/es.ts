@@ -78,14 +78,14 @@ const es: Dictionary = {
   },
   gallery: {
     kicker: "Galería",
-    title: "Hall de ascensores y aseos.",
+    title: "Hall de ascensores, aseos y plantas de oficina.",
     aria: "Muro fotográfico del edificio",
     items: [
       { title: "Hall de ascensores", image: "gallery-lift.jpg" },
       { title: "Aseo ejecutivo", image: "gallery-wc.jpg" },
-      { title: "Lobby de planta baja", image: "gallery-lobby.jpg" },
-      { title: "Detalle del lobby", image: "gallery-lobby-2.jpg" },
-      { title: "Atrio comercial", image: "gallery-atrium.jpg" },
+      { title: "Planta tipo", image: "gallery-floor.jpg" },
+      { title: "Oficina amueblada", image: "gallery-fitout-1.jpg" },
+      { title: "Oficina y vistas", image: "gallery-fitout-2.jpg" },
     ],
   },
   plans: {
@@ -96,6 +96,9 @@ const es: Dictionary = {
       { title: "Planta zona alta", image: "img_08.jpg" },
       { title: "Planta zona media", image: "img_09.jpg" },
       { title: "Planta zona baja", image: "img_10.jpg" },
+      { title: "Planta piso 21", image: "plan-21f.jpg" },
+      { title: "División tipo", image: "plan-typical.jpg" },
+      { title: "Distribución de oficina", image: "plan-layout.jpg" },
     ],
   },
   specs: {

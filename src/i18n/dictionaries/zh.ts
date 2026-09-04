@@ -77,14 +77,14 @@ const zh: Dictionary = {
   },
   gallery: {
     kicker: "实景",
-    title: "电梯厅与卫生间。",
+    title: "电梯厅、卫生间与办公层。",
     aria: "楼宇实景照片墙",
     items: [
       { title: "电梯厅", image: "gallery-lift.jpg" },
       { title: "行政卫生间", image: "gallery-wc.jpg" },
-      { title: "一层大堂", image: "gallery-lobby.jpg" },
-      { title: "大堂细节", image: "gallery-lobby-2.jpg" },
-      { title: "商业中庭", image: "gallery-atrium.jpg" },
+      { title: "标准层实景", image: "gallery-floor.jpg" },
+      { title: "精装办公", image: "gallery-fitout-1.jpg" },
+      { title: "精装办公与景观", image: "gallery-fitout-2.jpg" },
     ],
   },
   plans: {
@@ -95,6 +95,9 @@ const zh: Dictionary = {
       { title: "高区平面", image: "img_08.jpg" },
       { title: "中区平面", image: "img_09.jpg" },
       { title: "低区平面", image: "img_10.jpg" },
+      { title: "21层平面", image: "plan-21f.jpg" },
+      { title: "标准层分割", image: "plan-typical.jpg" },
+      { title: "办公布局示意", image: "plan-layout.jpg" },
     ],
   },
   specs: {
