@@ -18,9 +18,9 @@ const sans = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pengwenjing.com"),
-  title: "彭文静 | 泰康保险大厦租赁顾问 · 陆家嘴写字楼租赁",
+  title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
   description:
-    "泰康保险大厦（陆家嘴）写字楼租赁顾问彭文静。90,000㎡建筑面积、2/9号线双线地铁、41层甲级写字楼。提供看楼、租赁方案、平面图咨询。联系电话 15021149003（微信同号）。",
+    "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层2508~2666㎡，2/9号线双线地铁。高级租赁经理彭文静，电话 15021149003（微信同号）。",
   keywords: [
     "泰康保险大厦",
     "泰康大厦",
@@ -43,15 +43,15 @@ export const metadata: Metadata = {
     locale: "zh_CN",
     url: "https://pengwenjing.com",
     siteName: "泰康保险大厦租赁 · 彭文静",
-    title: "彭文静 | 泰康保险大厦租赁顾问 · 陆家嘴写字楼租赁",
+    title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
     description:
-      "泰康保险大厦（陆家嘴）写字楼租赁顾问彭文静。联系电话 15021149003（微信同号）。",
+      "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层2508~2666㎡。高级租赁经理彭文静，电话 15021149003（微信同号）。",
   },
   twitter: {
     card: "summary_large_image",
-    title: "泰康保险大厦租赁顾问 · 彭文静",
+    title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
     description:
-      "陆家嘴甲级写字楼租赁。联系电话 15021149003（微信同号）。",
+      "陆家嘴甲级写字楼租赁。约9万平方米，标准层2508~2666㎡。电话 15021149003（微信同号）。",
   },
   robots: {
     index: true,
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
 const realEstateAgentJsonLd = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "彭文静 — 泰康保险大厦租赁顾问",
+  name: "彭文静 — 泰康保险大厦高级租赁经理",
   description:
-    "泰康保险大厦（陆家嘴）写字楼租赁顾问。提供看楼安排、租赁方案、平面图咨询、技术参数核对等服务。",
+    "泰康保险大厦（陆家嘴）高级租赁经理。提供看楼安排、租赁方案、平面图咨询、技术参数核对等服务。",
   url: "https://pengwenjing.com",
   telephone: "+8615021149003",
   email: "pwj_003@126.com",
@@ -95,7 +95,7 @@ const faqJsonLd = {
       name: "泰康大厦销售的联系方式是什么？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "泰康保险大厦租赁顾问彭文静，手机/微信 15021149003（微信同号），邮箱 pwj_003@126.com，项目租赁热线 021-68599875 / 021-68599876。",
+        text: "泰康保险大厦高级租赁经理彭文静，手机/微信 15021149003（微信同号），邮箱 pwj_003@126.com。",
       },
     },
     {
@@ -111,7 +111,7 @@ const faqJsonLd = {
       name: "泰康大厦的建筑面积和标准层面积是多少？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "泰康保险大厦建筑总面积约90,000㎡，标准层面积约2,500㎡，地上41层/地下4层，整层得房率约70%。",
+        text: "泰康保险大厦建筑总面积约9万平方米，标准层面积2508~2666㎡，地上41层/地下4层，整层得房率约70%。",
       },
     },
     {

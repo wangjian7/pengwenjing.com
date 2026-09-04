@@ -12,18 +12,17 @@ type Props = {
 };
 
 export function HomePage({ locale, dict }: Props) {
-  const tel = dict.hotline.replace(/-/g, "");
-
   return (
     <main className={styles.page} data-locale={locale}>
       <header className={styles.nav}>
         <a className={styles.brand} href={`/${locale}#top`}>
           <span className={styles.brandName}>{dict.brand.name}</span>
-          <span className={styles.brandMeta}>{dict.brand.meta}</span>
+          <span className={styles.brandPerson}>{dict.brand.person}</span>
         </a>
         <div className={styles.navCluster}>
           <nav className={styles.navLinks} aria-label={dict.nav.aria}>
             <a href={`/${locale}#building`}>{dict.nav.building}</a>
+            <a href={`/${locale}#gallery`}>{dict.nav.gallery}</a>
             <a href={`/${locale}#plans`}>{dict.nav.plans}</a>
             <a href={`/${locale}#contact`}>{dict.nav.contact}</a>
           </nav>
@@ -45,8 +44,8 @@ export function HomePage({ locale, dict }: Props) {
         </div>
 
         <div className={styles.heroContent}>
-          <p className={styles.heroBrand}>{dict.brand.name}</p>
           <h1 className={styles.heroTitle}>{dict.hero.building}</h1>
+          <p className={styles.heroPerson}>{dict.brand.person}</p>
           <p className={styles.heroLine}>{dict.hero.line}</p>
           <div className={styles.heroActions}>
             <a className={styles.cta} href={`/${locale}#contact`}>
@@ -71,6 +70,17 @@ export function HomePage({ locale, dict }: Props) {
           </div>
         ))}
       </section>
+
+      <aside className={styles.leed} aria-label={dict.leed.caption}>
+        <Image
+          src={asset("leed.png")}
+          alt={dict.leed.alt}
+          width={720}
+          height={280}
+          className={styles.leedMark}
+        />
+        <p>{dict.leed.caption}</p>
+      </aside>
 
       <section id="building" className={styles.chapters}>
         <header className={styles.sectionLead}>
@@ -98,6 +108,27 @@ export function HomePage({ locale, dict }: Props) {
         ))}
       </section>
 
+      <section id="gallery" className={styles.gallery} aria-label={dict.gallery.aria}>
+        <header className={styles.sectionLead}>
+          <p className={styles.kicker}>{dict.gallery.kicker}</p>
+          <h2>{dict.gallery.title}</h2>
+        </header>
+        <div className={styles.galleryWall}>
+          {dict.gallery.items.map((item) => (
+            <figure key={item.image} className={styles.galleryCard}>
+              <Image
+                src={asset(item.image)}
+                alt={item.title}
+                width={1120}
+                height={792}
+                sizes="(max-width: 760px) 100vw, 50vw"
+              />
+              <figcaption>{item.title}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
       <section id="plans" className={styles.plans}>
         <header className={styles.sectionLead}>
           <p className={styles.kicker}>{dict.plans.kicker}</p>
@@ -107,7 +138,7 @@ export function HomePage({ locale, dict }: Props) {
           {dict.plans.items.map((plan) => (
             <figure key={plan.title} className={styles.plan}>
               <div className={styles.planFrame}>
-                <Image src={asset(plan.image)} alt={plan.title} fill sizes="280px" />
+                <Image src={asset(plan.image)} alt={plan.title} fill sizes="50vw" />
               </div>
               <figcaption>{plan.title}</figcaption>
             </figure>
@@ -133,15 +164,11 @@ export function HomePage({ locale, dict }: Props) {
       <section id="contact" className={styles.contact}>
         <div className={styles.contactCopy}>
           <p className={styles.kicker}>{dict.contact.kicker}</p>
-          <h2>{dict.brand.name}</h2>
+          <h2>{dict.brand.person}</h2>
           <p className={styles.contactRole}>{dict.contact.role}</p>
           <p className={styles.contactHint}>{dict.contact.hint}</p>
         </div>
         <div className={styles.contactDetails}>
-          <a href={`tel:${tel}`}>
-            <span>{dict.contact.hotline}</span>
-            <strong>{dict.hotline}</strong>
-          </a>
           <a href={`tel:${dict.contact.mobile}`}>
             <span>{dict.contact.phone}</span>
             <strong>{dict.contact.phonePlaceholder}</strong>

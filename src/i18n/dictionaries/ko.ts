@@ -2,16 +2,17 @@ import type { Dictionary } from "./types";
 
 const ko: Dictionary = {
   meta: {
-    title: "彭文静 | 태강보험빌딩 임대 어드바이저",
+    title: "태강보험빌딩 | 彭文静 · 시니어 리싱 매니저",
     description:
-      "루자쭈이 태강보험빌딩 오피스 임대 어드바이저 彭文静. 위치, 공간, 평면도, 방문 예약.",
+      "루자쭈이 태강보험빌딩 오피스 임대. 연면적 약 9만㎡, 기준층 2508~2666㎡, 지하철 2·9호선. 시니어 리싱 매니저 彭文静.",
   },
   brand: {
-    name: "彭文静",
-    meta: "Leasing",
+    name: "태강보험빌딩",
+    person: "彭文静",
   },
   nav: {
     building: "빌딩",
+    gallery: "실경",
     plans: "평면",
     contact: "연락",
     aria: "페이지 탐색",
@@ -29,9 +30,13 @@ const ko: Dictionary = {
     items: [
       { value: "루자쭈이", label: "CBD" },
       { value: "2 / 9", label: "지하철 2노선" },
-      { value: "9만㎡", label: "연면적" },
-      { value: "2500㎡", label: "기준층" },
+      { value: "약 9만㎡", label: "연면적" },
+      { value: "2508~2666", label: "기준층㎡" },
     ],
+  },
+  leed: {
+    alt: "LEED 골드 예비 인증",
+    caption: "LEED 골드 예비 인증",
   },
   building: {
     kicker: "빌딩",
@@ -51,7 +56,7 @@ const ko: Dictionary = {
         title: "편의",
         line: "상업·허브·주차장이 하나.",
         image: "chapter-life.jpg",
-        position: "center 20%",
+        position: "center center",
       },
       {
         id: "lobby",
@@ -71,36 +76,63 @@ const ko: Dictionary = {
       },
     ],
   },
+  gallery: {
+    kicker: "실경",
+    title: "엘리베이터홀과 화장실.",
+    aria: "빌딩 실경 포토월",
+    items: [
+      { title: "엘리베이터홀", image: "gallery-lift.jpg" },
+      { title: "임원 화장실", image: "gallery-wc.jpg" },
+      { title: "1층 로비", image: "gallery-lobby.jpg" },
+      { title: "로비 디테일", image: "gallery-lobby-2.jpg" },
+      { title: "상업 아트리움", image: "gallery-atrium.jpg" },
+    ],
+  },
   plans: {
     kicker: "평면",
     title: "구역이 한눈에.",
     items: [
-      { title: "입면 구역", image: "plan-1.jpg" },
-      { title: "고층 평면", image: "plan-2.jpg" },
-      { title: "중층 평면", image: "plan-3.jpg" },
-      { title: "저층 평면", image: "plan-4.jpg" },
+      { title: "입면 구역", image: "img_07.jpg" },
+      { title: "고층 평면", image: "img_08.jpg" },
+      { title: "중층 평면", image: "img_09.jpg" },
+      { title: "저층 평면", image: "img_10.jpg" },
     ],
   },
   specs: {
     kicker: "스펙",
-    title: "핵심 사양.",
+    title: "오피스 기술 사양.",
     aria: "기술 사양",
     items: [
+      ["연면적", "약 9만㎡"],
       ["층수", "지상 41 / 지하 4"],
+      ["기준층 면적", "2508~2666 ㎡"],
+      ["전층 효율", "약 70%"],
       ["기준층 천장고", "3.1 m"],
-      ["코어 거리", "최대 약 14 m"],
-      ["바닥 하중", "3.5–5.0 kN/㎡"],
-      ["주차", "527"],
+      ["이중 바닥", "150 mm"],
+      ["외벽~코어", "최대 약 14 m"],
+      ["바닥 하중", "기준층 3.5 kN/㎡ · 트레이딩 5.0 kN/㎡"],
+      ["가분 바닥", "기준층 예비"],
+      ["임원 화장실", "층당 1~2개"],
+      ["천장", "금속 일체형 천장"],
+      ["통신", "이동 / 전신 / 유니콤, VSAT 예비"],
+      ["주차", "지하 527"],
+      ["엘리베이터", "Schindler PORT"],
+      ["승객용", "오피스 18대(고층 6 / 중층 5 / 저층 3.5 m/s) + 주차·포디엄 2대"],
+      ["VIP", "1대"],
+      ["서비스", "화물·소방 2대"],
+      ["에스컬레이터", "지하철 직결 2대"],
+      ["공조", "VAV + 겨울 창가 난방"],
       ["외기", "30 m³/h·인"],
       ["냉각수", "24시간"],
-      ["조명", "500 LUX"],
+      ["전력", "80~100 VA/㎡"],
+      ["예비 발전", "임차인 설치 예비"],
+      ["조명", "데스크 500 LUX"],
     ],
   },
   contact: {
     kicker: "연락",
-    role: "태강보험빌딩 임대 영업 매니저",
+    role: "태강보험빌딩 시니어 리싱 매니저",
     hint: "자료, 방문, 제안 — 바로 말씀하세요.",
-    hotline: "핫라인",
     phone: "휴대폰 / WeChat",
     email: "이메일",
     cta: "바로 연락",
@@ -112,7 +144,6 @@ const ko: Dictionary = {
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",
   },
-  hotline: "021-68599875",
 };
 
 export default ko;

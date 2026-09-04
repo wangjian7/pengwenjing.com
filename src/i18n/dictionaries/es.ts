@@ -2,16 +2,17 @@ import type { Dictionary } from "./types";
 
 const es: Dictionary = {
   meta: {
-    title: "Peng Wenjing | Arrendamiento Torre Taikang Insurance",
+    title: "Torre Taikang Insurance | Peng Wenjing · Gerente sénior de arrendamiento",
     description:
-      "Asesora de arrendamiento de oficinas de la Torre Taikang Insurance en Lujiazui. Ubicación, espacios, planos y visitas.",
+      "Arrendamiento de oficinas en la Torre Taikang Insurance, Lujiazui. Unos 90.000㎡, plantas tipo 2.508–2.666㎡, metro líneas 2 y 9. Gerente sénior Peng Wenjing.",
   },
   brand: {
-    name: "Peng Wenjing",
-    meta: "Leasing",
+    name: "Torre Taikang Insurance",
+    person: "Peng Wenjing",
   },
   nav: {
     building: "Edificio",
+    gallery: "Galería",
     plans: "Planos",
     contact: "Contacto",
     aria: "Navegación",
@@ -29,9 +30,13 @@ const es: Dictionary = {
     items: [
       { value: "Lujiazui", label: "CBD" },
       { value: "2 / 9", label: "Líneas de metro" },
-      { value: "90.000㎡", label: "Área total" },
-      { value: "2.500㎡", label: "Planta tipo" },
+      { value: "≈90.000㎡", label: "Superficie" },
+      { value: "2508~2666", label: "Planta tipo ㎡" },
     ],
+  },
+  leed: {
+    alt: "Precertificación LEED Gold",
+    caption: "Precertificación LEED Gold",
   },
   building: {
     kicker: "Edificio",
@@ -51,7 +56,7 @@ const es: Dictionary = {
         title: "Servicios",
         line: "Comercio, hub y parking en uno.",
         image: "chapter-life.jpg",
-        position: "center 20%",
+        position: "center center",
       },
       {
         id: "lobby",
@@ -71,36 +76,63 @@ const es: Dictionary = {
       },
     ],
   },
+  gallery: {
+    kicker: "Galería",
+    title: "Hall de ascensores y aseos.",
+    aria: "Muro fotográfico del edificio",
+    items: [
+      { title: "Hall de ascensores", image: "gallery-lift.jpg" },
+      { title: "Aseo ejecutivo", image: "gallery-wc.jpg" },
+      { title: "Lobby de planta baja", image: "gallery-lobby.jpg" },
+      { title: "Detalle del lobby", image: "gallery-lobby-2.jpg" },
+      { title: "Atrio comercial", image: "gallery-atrium.jpg" },
+    ],
+  },
   plans: {
     kicker: "Planos",
     title: "Zonas claras de un vistazo.",
     items: [
-      { title: "Zonas de fachada", image: "plan-1.jpg" },
-      { title: "Planta zona alta", image: "plan-2.jpg" },
-      { title: "Planta zona media", image: "plan-3.jpg" },
-      { title: "Planta zona baja", image: "plan-4.jpg" },
+      { title: "Zonas de fachada", image: "img_07.jpg" },
+      { title: "Planta zona alta", image: "img_08.jpg" },
+      { title: "Planta zona media", image: "img_09.jpg" },
+      { title: "Planta zona baja", image: "img_10.jpg" },
     ],
   },
   specs: {
     kicker: "Datos",
-    title: "Especificaciones clave.",
+    title: "Especificaciones técnicas de oficina.",
     aria: "Especificaciones técnicas",
     items: [
+      ["Superficie total", "Aprox. 90.000㎡"],
       ["Plantas", "41 sobre / 4 bajo rasante"],
+      ["Planta tipo", "2.508–2.666㎡"],
+      ["Eficiencia de planta", "Aprox. 70%"],
       ["Altura libre típica", "3,1 m"],
-      ["Distancia al núcleo", "Hasta ~14 m"],
-      ["Carga de forjado", "3,5–5,0 kN/㎡"],
-      ["Aparcamiento", "527"],
+      ["Suelo técnico", "150 mm"],
+      ["Fachada al núcleo", "Hasta ~14 m"],
+      ["Carga de forjado", "Tipo 3,5 kN/㎡ · Trading 5,0 kN/㎡"],
+      ["Forjado desmontable", "Previsión en planta tipo"],
+      ["Aseos ejecutivos", "1–2 por planta"],
+      ["Techo", "Techo metálico integrado"],
+      ["Comunicaciones", "China Mobile / Telecom / Unicom, VSAT reservado"],
+      ["Aparcamiento", "527 subterráneos"],
+      ["Ascensores", "Schindler PORT"],
+      ["Pasajeros", "18 de oficina (alta 6 / media 5 / baja 3,5 m/s) + 2 parking/podio"],
+      ["VIP", "1"],
+      ["Servicio", "2 de carga / incendio"],
+      ["Escaleras mecánicas", "2 Schindler al metro"],
+      ["Climatización", "VAV + calefacción perimetral en invierno"],
       ["Aire fresco", "30 m³/h·persona"],
-      ["Agua de refrigeración", "24h"],
-      ["Iluminación", "500 LUX"],
+      ["Agua de refrigeración", "24 h"],
+      ["Potencia", "80–100 VA/㎡"],
+      ["Generador", "Previsión para el inquilino"],
+      ["Iluminación", "500 LUX en escritorio"],
     ],
   },
   contact: {
     kicker: "Contacto",
-    role: "Gerente de ventas de arrendamiento, Torre Taikang Insurance",
+    role: "Gerente sénior de arrendamiento, Torre Taikang Insurance",
     hint: "Materiales, visitas, propuestas — dígalo directamente.",
-    hotline: "Línea",
     phone: "Móvil / WeChat",
     email: "Correo",
     cta: "Contactar ahora",
@@ -112,7 +144,6 @@ const es: Dictionary = {
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",
   },
-  hotline: "021-68599875",
 };
 
 export default es;

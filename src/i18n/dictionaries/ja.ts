@@ -2,16 +2,17 @@ import type { Dictionary } from "./types";
 
 const ja: Dictionary = {
   meta: {
-    title: "彭文静 | 泰康保険大厦リース顧問",
+    title: "泰康保険大厦 | 彭文静 · シニアリーシングマネージャー",
     description:
-      "陸家嘴・泰康保険大厦のオフィスリーシング顧問、彭文静。立地、空間、平面図、内覧予約。",
+      "陸家嘴・泰康保険大厦のオフィスリーシング。延床約9万㎡、基準階2508〜2666㎡、地下鉄2・9号線。シニアリーシングマネージャー彭文静。",
   },
   brand: {
-    name: "彭文静",
-    meta: "Leasing",
+    name: "泰康保険大厦",
+    person: "彭文静",
   },
   nav: {
     building: "ビル",
+    gallery: "実景",
     plans: "平面",
     contact: "連絡",
     aria: "ページナビ",
@@ -29,9 +30,13 @@ const ja: Dictionary = {
     items: [
       { value: "陸家嘴", label: "CBD" },
       { value: "2 / 9", label: "地下鉄2路線" },
-      { value: "9万㎡", label: "延床面積" },
-      { value: "2500㎡", label: "基準階" },
+      { value: "約9万㎡", label: "延床面積" },
+      { value: "2508~2666", label: "基準階㎡" },
     ],
+  },
+  leed: {
+    alt: "LEED ゴールド予備認証",
+    caption: "LEED ゴールド予備認証",
   },
   building: {
     kicker: "ビル",
@@ -51,7 +56,7 @@ const ja: Dictionary = {
         title: "設備",
         line: "商業・ハブ・駐車場が一体。",
         image: "chapter-life.jpg",
-        position: "center 20%",
+        position: "center center",
       },
       {
         id: "lobby",
@@ -71,36 +76,63 @@ const ja: Dictionary = {
       },
     ],
   },
+  gallery: {
+    kicker: "実景",
+    title: "エレベーターホールとトイレ。",
+    aria: "ビル実景フォトウォール",
+    items: [
+      { title: "エレベーターホール", image: "gallery-lift.jpg" },
+      { title: "エグゼクティブトイレ", image: "gallery-wc.jpg" },
+      { title: "1階ロビー", image: "gallery-lobby.jpg" },
+      { title: "ロビーディテール", image: "gallery-lobby-2.jpg" },
+      { title: "商業アトリウム", image: "gallery-atrium.jpg" },
+    ],
+  },
   plans: {
     kicker: "平面",
     title: "ゾーンが一目でわかる。",
     items: [
-      { title: "立面ゾーン", image: "plan-1.jpg" },
-      { title: "高区平面", image: "plan-2.jpg" },
-      { title: "中区平面", image: "plan-3.jpg" },
-      { title: "低区平面", image: "plan-4.jpg" },
+      { title: "立面ゾーン", image: "img_07.jpg" },
+      { title: "高区平面", image: "img_08.jpg" },
+      { title: "中区平面", image: "img_09.jpg" },
+      { title: "低区平面", image: "img_10.jpg" },
     ],
   },
   specs: {
     kicker: "仕様",
-    title: "主要スペック。",
+    title: "オフィス技術仕様。",
     aria: "技術仕様",
     items: [
+      ["延床面積", "約 9 万㎡"],
       ["階数", "地上41 / 地下4"],
+      ["基準階面積", "2508〜2666 ㎡"],
+      ["整層効率", "約 70%"],
       ["基準階天井高", "3.1 m"],
-      ["コアまでの距離", "最大約14 m"],
-      ["床荷重", "3.5–5.0 kN/㎡"],
-      ["駐車台数", "527"],
+      ["OAフロア", "150 mm"],
+      ["外壁〜コア", "最大約14 m"],
+      ["床荷重", "基準階 3.5 kN/㎡ · 取引階 5.0 kN/㎡"],
+      ["可動床", "基準階に予備"],
+      ["エグゼクティブトイレ", "各階 1〜2室"],
+      ["天井", "金属一体天井"],
+      ["通信", "移動 / 電信 / 聯通、VSAT予備"],
+      ["駐車", "地下 527"],
+      ["エレベーター", "Schindler PORT"],
+      ["乗用", "オフィス18基（高区6 / 中区5 / 低区3.5 m/s）+ 駐車場・低層2基"],
+      ["VIP", "1基"],
+      ["サービス", "貨物・防災 2基"],
+      ["エスカレーター", "地下鉄直結 2基"],
+      ["空調", "VAV + 冬季ペリメーター暖房"],
       ["外気", "30 m³/h·人"],
       ["冷却水", "24時間"],
-      ["照明", "500 LUX"],
+      ["電力", "80〜100 VA/㎡"],
+      ["非常用発電", "テナント設置予備"],
+      ["照明", "机上面 500 LUX"],
     ],
   },
   contact: {
     kicker: "連絡",
-    role: "泰康保険大厦リース営業マネージャー",
+    role: "泰康保険大厦シニアリーシングマネージャー",
     hint: "資料・内覧・提案——すぐご連絡ください。",
-    hotline: "ホットライン",
     phone: "携帯 / WeChat",
     email: "メール",
     cta: "今すぐ連絡",
@@ -112,7 +144,6 @@ const ja: Dictionary = {
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",
   },
-  hotline: "021-68599875",
 };
 
 export default ja;

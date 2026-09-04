@@ -5,6 +5,7 @@ export type Dictionary = {
   };
   nav: {
     building: string;
+    gallery: string;
     plans: string;
     contact: string;
     aria: string;
@@ -21,6 +22,10 @@ export type Dictionary = {
     aria: string;
     items: { value: string; label: string }[];
   };
+  leed: {
+    alt: string;
+    caption: string;
+  };
   building: {
     kicker: string;
     title: string;
@@ -32,6 +37,12 @@ export type Dictionary = {
       image: string;
       position: string;
     }[];
+  };
+  gallery: {
+    kicker: string;
+    title: string;
+    aria: string;
+    items: { title: string; image: string }[];
   };
   plans: {
     kicker: string;
@@ -48,7 +59,6 @@ export type Dictionary = {
     kicker: string;
     role: string;
     hint: string;
-    hotline: string;
     phone: string;
     email: string;
     cta: string;
@@ -62,7 +72,6 @@ export type Dictionary = {
   };
   brand: {
     name: string;
-    meta: string;
+    person: string;
   };
-  hotline: string;
 };

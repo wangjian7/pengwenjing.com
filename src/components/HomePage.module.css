@@ -14,9 +14,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.05rem clamp(1rem, 4vw, 2.5rem);
+  padding:
+    calc(0.7rem + env(safe-area-inset-top, 0px))
+    clamp(1rem, 4vw, 2.5rem)
+    0.7rem;
   color: #f2f5f7;
-  mix-blend-mode: difference;
+  background: rgba(10, 16, 22, 0.82);
+  border-bottom: 1px solid rgba(244, 247, 249, 0.08);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
   animation: fadeDown 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -29,24 +35,25 @@
 }
 
 .brand {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
+  min-width: 0;
 }
 
 .brandName {
   font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
 }
 
-.brandMeta {
-  opacity: 0.55;
+.brandPerson {
+  opacity: 0.62;
   font-size: 0.68rem;
   font-weight: 500;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
+  letter-spacing: 0.22em;
 }
 
 .navLinks {
@@ -90,9 +97,9 @@
 
 .heroImage {
   object-fit: cover;
-  object-position: center 42%;
-  transform: scale(1.08);
-  animation: heroDrift 20s ease-in-out infinite alternate;
+  object-position: center 78%;
+  transform: scale(1.02);
+  animation: heroDrift 22s ease-in-out infinite alternate;
 }
 
 .heroVeil {
@@ -111,23 +118,22 @@
   animation: riseIn 1100ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both;
 }
 
-.heroBrand {
-  margin-bottom: 0.7rem;
+.heroTitle {
+  margin: 0;
   font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
-  font-size: clamp(2.6rem, 7.2vw, 4.8rem);
+  font-size: clamp(2.35rem, 7vw, 4.6rem);
   font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.16em;
+  line-height: 1.08;
+  letter-spacing: 0.14em;
   text-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
 }
 
-.heroTitle {
-  margin: 0;
-  color: rgba(244, 247, 249, 0.88);
-  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
-  font-size: clamp(1rem, 2.1vw, 1.25rem);
+.heroPerson {
+  margin-top: 0.85rem;
+  color: rgba(244, 247, 249, 0.78);
+  font-size: clamp(0.92rem, 2vw, 1.15rem);
   font-weight: 400;
-  letter-spacing: 0.38em;
+  letter-spacing: 0.32em;
 }
 
 .heroLine {
@@ -207,6 +213,15 @@
   animation: scrollPulse 2.2s ease-in-out infinite;
 }
 
+.signals,
+.chapters,
+.gallery,
+.plans,
+.specs,
+.contact {
+  scroll-margin-top: 5.5rem;
+}
+
 .signals {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -214,7 +229,6 @@
   width: min(100%, var(--measure));
   margin: 0 auto;
   padding: clamp(2.25rem, 5vw, 3.75rem) clamp(1.25rem, 4vw, 2rem);
-  border-bottom: 1px solid var(--line);
 }
 
 .signal {
@@ -242,6 +256,29 @@
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+}
+
+.leed {
+  display: grid;
+  justify-items: center;
+  gap: 0.7rem;
+  width: min(100%, var(--measure));
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2rem) clamp(2.25rem, 5vw, 3.5rem);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.leedMark {
+  width: min(100%, 28rem);
+  height: auto;
+}
+
+.leed p {
+  color: var(--ink-faint);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
 }
 
 .sectionLead {
@@ -302,7 +339,8 @@
 }
 
 .chapterMedia img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   transition: transform 1.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -342,36 +380,59 @@
   letter-spacing: 0.08em;
 }
 
+.gallery {
+  padding: clamp(3.25rem, 7vw, 5.5rem) 0 0;
+}
+
+.galleryWall {
+  columns: 2;
+  column-gap: 0.9rem;
+  width: min(100%, 1280px);
+  margin: 1.75rem auto 0;
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
+}
+
+.galleryCard {
+  break-inside: avoid;
+  margin: 0 0 0.9rem;
+  background: #121820;
+}
+
+.galleryCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.galleryCard figcaption {
+  padding: 0.7rem 0.85rem 0.9rem;
+  color: #d7dee4;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
 .plans {
   padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .planRail {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(230px, 270px);
-  gap: 0.9rem;
-  width: 100%;
-  margin-top: 1.75rem;
-  padding: 0 clamp(1.25rem, 4vw, 2rem) 0.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
-}
-
-.plan {
-  scroll-snap-align: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+  width: min(100%, 1280px);
+  margin: 1.75rem auto 0;
+  padding: 0 clamp(1.25rem, 4vw, 2rem);
 }
 
 .planFrame {
   position: relative;
-  height: 340px;
+  aspect-ratio: 1280 / 2099;
   overflow: hidden;
   background: #141b22;
 }
 
 .planFrame img {
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
 
@@ -420,11 +481,13 @@
 }
 
 .specRow dd {
+  max-width: 68%;
   font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-align: right;
+  line-height: 1.45;
 }
 
 .contact {
@@ -538,11 +601,11 @@
 
 @keyframes heroDrift {
   from {
-    transform: scale(1.08) translate3d(0, 0, 0);
+    transform: scale(1.02) translate3d(0, 0, 0);
   }
 
   to {
-    transform: scale(1.14) translate3d(0, -1.5%, 0);
+    transform: scale(1.06) translate3d(0, -1.2%, 0);
   }
 }
 
@@ -563,6 +626,10 @@
   .signals {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 1.25rem;
+  }
+
+  .galleryWall {
+    columns: 2;
   }
 
   .signal:nth-child(3),
@@ -612,8 +679,8 @@
   }
 }
 
-.page[data-locale="en"] .heroBrand,
-.page[data-locale="es"] .heroBrand,
+.page[data-locale="en"] .heroTitle,
+.page[data-locale="es"] .heroTitle,
 .page[data-locale="en"] .brandName,
 .page[data-locale="es"] .brandName,
 .page[data-locale="en"] .contact h2,
@@ -621,9 +688,9 @@
   letter-spacing: 0.04em;
 }
 
-.page[data-locale="en"] .heroTitle,
-.page[data-locale="es"] .heroTitle {
-  letter-spacing: 0.08em;
+.page[data-locale="en"] .heroPerson,
+.page[data-locale="es"] .heroPerson {
+  letter-spacing: 0.12em;
 }
 
 .page[data-locale="en"] .heroLine,
@@ -631,9 +698,9 @@
   letter-spacing: 0.06em;
 }
 
-.page[data-locale="ja"] .heroBrand,
-.page[data-locale="ko"] .heroBrand {
-  letter-spacing: 0.1em;
+.page[data-locale="ja"] .heroTitle,
+.page[data-locale="ko"] .heroTitle {
+  letter-spacing: 0.08em;
 }
 
 @media (max-width: 760px) {
@@ -655,33 +722,32 @@
   }
 
   .heroImage {
-    object-position: center 38%;
-  }
-
-  .heroBrand {
-    letter-spacing: 0.12em;
+    object-position: center 72%;
   }
 
   .heroTitle {
+    letter-spacing: 0.1em;
+  }
+
+  .heroPerson {
     letter-spacing: 0.2em;
+  }
+
+  .galleryWall {
+    columns: 1;
+  }
+
+  .planRail {
+    grid-template-columns: 1fr;
   }
 
   .heroLine {
     letter-spacing: 0.12em;
   }
 
-  .page[data-locale="en"] .heroBrand,
-  .page[data-locale="es"] .heroBrand {
-    letter-spacing: 0.03em;
-  }
-
   .page[data-locale="en"] .heroTitle,
   .page[data-locale="es"] .heroTitle {
-    letter-spacing: 0.05em;
-  }
-
-  .planFrame {
-    height: 290px;
+    letter-spacing: 0.03em;
   }
 }
 

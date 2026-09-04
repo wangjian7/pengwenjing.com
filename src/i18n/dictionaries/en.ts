@@ -2,16 +2,17 @@ import type { Dictionary } from "./types";
 
 const en: Dictionary = {
   meta: {
-    title: "Peng Wenjing | Taikang Insurance Tower Leasing",
+    title: "Taikang Insurance Tower | Peng Wenjing · Senior Leasing Manager",
     description:
-      "Office leasing advisor for Taikang Insurance Tower in Lujiazui. Location, spaces, floor plans, and viewing appointments.",
+      "Office leasing at Taikang Insurance Tower, Lujiazui. Approx. 90,000㎡, typical floors 2,508–2,666㎡, Metro Lines 2 and 9. Senior Leasing Manager Peng Wenjing.",
   },
   brand: {
-    name: "Peng Wenjing",
-    meta: "Leasing",
+    name: "Taikang Insurance Tower",
+    person: "Peng Wenjing",
   },
   nav: {
     building: "Building",
+    gallery: "Gallery",
     plans: "Plans",
     contact: "Contact",
     aria: "Page navigation",
@@ -29,9 +30,13 @@ const en: Dictionary = {
     items: [
       { value: "Lujiazui", label: "CBD" },
       { value: "2 / 9", label: "Metro lines" },
-      { value: "90,000㎡", label: "Gross area" },
-      { value: "2,500㎡", label: "Typical floor" },
+      { value: "≈90,000㎡", label: "Gross area" },
+      { value: "2508~2666", label: "Typical floor ㎡" },
     ],
+  },
+  leed: {
+    alt: "LEED Gold pre-certification",
+    caption: "LEED Gold pre-certification",
   },
   building: {
     kicker: "Building",
@@ -51,7 +56,7 @@ const en: Dictionary = {
         title: "Amenities",
         line: "Retail, transit hub, and parking as one.",
         image: "chapter-life.jpg",
-        position: "center 20%",
+        position: "center center",
       },
       {
         id: "lobby",
@@ -71,36 +76,63 @@ const en: Dictionary = {
       },
     ],
   },
+  gallery: {
+    kicker: "Gallery",
+    title: "Lift lobby and washrooms.",
+    aria: "Building photo wall",
+    items: [
+      { title: "Lift lobby", image: "gallery-lift.jpg" },
+      { title: "Executive washroom", image: "gallery-wc.jpg" },
+      { title: "Ground-floor lobby", image: "gallery-lobby.jpg" },
+      { title: "Lobby detail", image: "gallery-lobby-2.jpg" },
+      { title: "Retail atrium", image: "gallery-atrium.jpg" },
+    ],
+  },
   plans: {
     kicker: "Plans",
     title: "Clear zones at a glance.",
     items: [
-      { title: "Elevation zones", image: "plan-1.jpg" },
-      { title: "High-zone plan", image: "plan-2.jpg" },
-      { title: "Mid-zone plan", image: "plan-3.jpg" },
-      { title: "Low-zone plan", image: "plan-4.jpg" },
+      { title: "Elevation zones", image: "img_07.jpg" },
+      { title: "High-zone plan", image: "img_08.jpg" },
+      { title: "Mid-zone plan", image: "img_09.jpg" },
+      { title: "Low-zone plan", image: "img_10.jpg" },
     ],
   },
   specs: {
     kicker: "Specs",
-    title: "Essential specs.",
+    title: "Office technical specifications.",
     aria: "Technical specifications",
     items: [
+      ["Total GFA", "Approx. 90,000㎡"],
       ["Floors", "41 above / 4 below"],
+      ["Typical floor area", "2,508–2,666㎡"],
+      ["Whole-floor efficiency", "Approx. 70%"],
       ["Typical clear height", "3.1 m"],
-      ["Core depth", "Up to ~14 m"],
-      ["Floor load", "3.5–5.0 kN/㎡"],
-      ["Parking", "527"],
+      ["Raised floor", "150 mm"],
+      ["Facade to core", "Up to ~14 m"],
+      ["Floor loading", "Typical 3.5 kN/㎡ · Trading 5.0 kN/㎡"],
+      ["Removable floor", "Provision on typical floors"],
+      ["Executive toilets", "1–2 sets per floor"],
+      ["Ceiling system", "Integrated metal ceiling"],
+      ["Communications", "China Mobile / Telecom / Unicom, VSAT reserved"],
+      ["Parking", "527 underground"],
+      ["Elevator system", "Schindler PORT"],
+      ["Passenger lifts", "18 office (high 6 / mid 5 / low 3.5 m/s) + 2 parking/podium"],
+      ["VIP lift", "1"],
+      ["Service lifts", "2 goods / fire"],
+      ["Escalators", "2 Schindler units to metro"],
+      ["Air conditioning", "VAV + winter perimeter heating"],
       ["Fresh air", "30 m³/h·person"],
-      ["Cooling water", "24h"],
-      ["Lighting", "500 LUX"],
+      ["Chilled water", "24 hours"],
+      ["Tenant power", "80–100 VA/㎡"],
+      ["Standby generator", "Provision for tenant install"],
+      ["Lighting", "500 LUX at desktop"],
     ],
   },
   contact: {
     kicker: "Contact",
-    role: "Leasing Sales Manager, Taikang Insurance Tower",
+    role: "Senior Leasing Manager, Taikang Insurance Tower",
     hint: "Materials, viewings, proposals — just say the word.",
-    hotline: "Hotline",
     phone: "Mobile / WeChat",
     email: "Email",
     cta: "Contact now",
@@ -112,7 +144,6 @@ const en: Dictionary = {
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",
   },
-  hotline: "021-68599875",
 };
 
 export default en;
