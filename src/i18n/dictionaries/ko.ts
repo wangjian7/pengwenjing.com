@@ -96,9 +96,6 @@ const ko: Dictionary = {
       { title: "고층 평면", image: "img_08.jpg" },
       { title: "중층 평면", image: "img_09.jpg" },
       { title: "저층 평면", image: "img_10.jpg" },
-      { title: "21층 평면", image: "plan-21f.jpg" },
-      { title: "기준층 분할", image: "plan-typical.jpg" },
-      { title: "사무 레이아웃 예시", image: "plan-layout.jpg" },
     ],
   },
   specs: {

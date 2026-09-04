@@ -96,9 +96,6 @@ const en: Dictionary = {
       { title: "High-zone plan", image: "img_08.jpg" },
       { title: "Mid-zone plan", image: "img_09.jpg" },
       { title: "Low-zone plan", image: "img_10.jpg" },
-      { title: "Level 21 plan", image: "plan-21f.jpg" },
-      { title: "Typical split", image: "plan-typical.jpg" },
-      { title: "Sample office layout", image: "plan-layout.jpg" },
     ],
   },
   specs: {

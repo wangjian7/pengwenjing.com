@@ -96,9 +96,6 @@ const es: Dictionary = {
       { title: "Planta zona alta", image: "img_08.jpg" },
       { title: "Planta zona media", image: "img_09.jpg" },
       { title: "Planta zona baja", image: "img_10.jpg" },
-      { title: "Planta piso 21", image: "plan-21f.jpg" },
-      { title: "División tipo", image: "plan-typical.jpg" },
-      { title: "Distribución de oficina", image: "plan-layout.jpg" },
     ],
   },
   specs: {

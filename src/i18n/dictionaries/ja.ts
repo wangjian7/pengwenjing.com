@@ -96,9 +96,6 @@ const ja: Dictionary = {
       { title: "高区平面", image: "img_08.jpg" },
       { title: "中区平面", image: "img_09.jpg" },
       { title: "低区平面", image: "img_10.jpg" },
-      { title: "21階平面", image: "plan-21f.jpg" },
-      { title: "基準階分割", image: "plan-typical.jpg" },
-      { title: "オフィスレイアウト例", image: "plan-layout.jpg" },
     ],
   },
   specs: {

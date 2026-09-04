@@ -95,9 +95,6 @@ const zh: Dictionary = {
       { title: "高区平面", image: "img_08.jpg" },
       { title: "中区平面", image: "img_09.jpg" },
       { title: "低区平面", image: "img_10.jpg" },
-      { title: "21层平面", image: "plan-21f.jpg" },
-      { title: "标准层分割", image: "plan-typical.jpg" },
-      { title: "办公布局示意", image: "plan-layout.jpg" },
     ],
   },
   specs: {
