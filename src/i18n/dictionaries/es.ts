@@ -4,7 +4,7 @@ const es: Dictionary = {
   meta: {
     title: "Torre Taikang Insurance | Peng Wenjing · Gerente sénior de arrendamiento",
     description:
-      "Arrendamiento de oficinas en la Torre Taikang Insurance, Lujiazui. Unos 90.000㎡, plantas tipo 2.508–2.666㎡, metro líneas 2 y 9. Gerente sénior Peng Wenjing.",
+      "Arrendamiento de oficinas en la Torre Taikang Insurance, Lujiazui. Unos 90.000㎡, plantas tipo aprox. 2,500㎡, metro línea 2 / línea 9. Gerente sénior Peng Wenjing.",
   },
   brand: {
     name: "Torre Taikang Insurance",
@@ -29,9 +29,9 @@ const es: Dictionary = {
     aria: "Cifras clave",
     items: [
       { value: "Lujiazui", label: "CBD" },
-      { value: "2 / 9", label: "Líneas de metro" },
+      { value: "Línea 2 / Línea 9", label: "Metro" },
       { value: "≈90.000㎡", label: "Superficie" },
-      { value: "2508~2666", label: "Planta tipo ㎡" },
+      { value: "≈2,500㎡", label: "Planta tipo" },
     ],
   },
   leed: {
@@ -97,7 +97,7 @@ const es: Dictionary = {
     items: [
       ["Superficie total", "Aprox. 90.000㎡"],
       ["Plantas", "41 sobre / 4 bajo rasante"],
-      ["Planta tipo", "2.508–2.666㎡"],
+      ["Planta tipo", "Aprox. 2,500㎡"],
       ["Eficiencia de planta", "Aprox. 70%"],
       ["Altura libre típica", "3,1 m"],
       ["Suelo técnico", "150 mm"],
@@ -109,16 +109,16 @@ const es: Dictionary = {
       ["Comunicaciones", "China Mobile / Telecom / Unicom, VSAT reservado"],
       ["Aparcamiento", "527 subterráneos"],
       ["Ascensores", "Schindler PORT"],
-      ["Pasajeros", "18 de oficina (alta 6 / media 5 / baja 3,5 m/s) + 2 parking/podio"],
+      ["Pasajeros", "18 de oficina (alta 6 m/s / media 5 m/s / baja 3,5 m/s) + 2 parking/podio"],
       ["VIP", "1"],
       ["Servicio", "2 de carga / incendio"],
       ["Escaleras mecánicas", "2 Schindler al metro"],
-      ["Climatización", "VAV + calefacción perimetral en invierno"],
+      ["Climatización", "Sistema VAV"],
       ["Aire fresco", "30 m³/h·persona"],
       ["Agua de refrigeración", "24 h"],
       ["Potencia", "80–100 VA/㎡"],
       ["Generador", "Previsión para el inquilino"],
-      ["Iluminación", "500 LUX en escritorio"],
+      ["Iluminación", "500 LUX"],
     ],
   },
   contact: {
@@ -129,9 +129,9 @@ const es: Dictionary = {
     email: "Correo",
     cta: "Contactar ahora",
     phonePlaceholder: "15021149003 (WeChat mismo número)",
-    emailPlaceholder: "pwj_003@126.com",
+    emailPlaceholder: "pengwj10@tkhealthcare.com",
     mobile: "15021149003",
-    emailAddress: "pwj_003@126.com",
+    emailAddress: "pengwj10@tkhealthcare.com",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",

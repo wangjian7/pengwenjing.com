@@ -4,7 +4,7 @@ const ja: Dictionary = {
   meta: {
     title: "泰康保険大厦 | 彭文静 · シニアリーシングマネージャー",
     description:
-      "陸家嘴・泰康保険大厦のオフィスリーシング。延床約9万㎡、基準階2508〜2666㎡、地下鉄2・9号線。シニアリーシングマネージャー彭文静。",
+      "陸家嘴・泰康保険大厦のオフィスリーシング。延床約9万㎡、基準階約2,500㎡、地下鉄2号線/9号線。シニアリーシングマネージャー彭文静。",
   },
   brand: {
     name: "泰康保険大厦",
@@ -29,9 +29,9 @@ const ja: Dictionary = {
     aria: "主要数字",
     items: [
       { value: "陸家嘴", label: "CBD" },
-      { value: "2 / 9", label: "地下鉄2路線" },
+      { value: "2号線/9号線", label: "地下鉄" },
       { value: "約9万㎡", label: "延床面積" },
-      { value: "2508~2666", label: "基準階㎡" },
+      { value: "約2,500㎡", label: "基準階" },
     ],
   },
   leed: {
@@ -97,7 +97,7 @@ const ja: Dictionary = {
     items: [
       ["延床面積", "約 9 万㎡"],
       ["階数", "地上41 / 地下4"],
-      ["基準階面積", "2508〜2666 ㎡"],
+      ["基準階面積", "約 2,500 ㎡"],
       ["整層効率", "約 70%"],
       ["基準階天井高", "3.1 m"],
       ["OAフロア", "150 mm"],
@@ -109,16 +109,16 @@ const ja: Dictionary = {
       ["通信", "移動 / 電信 / 聯通、VSAT予備"],
       ["駐車", "地下 527"],
       ["エレベーター", "Schindler PORT"],
-      ["乗用", "オフィス18基（高区6 / 中区5 / 低区3.5 m/s）+ 駐車場・低層2基"],
+      ["乗用", "オフィス18基（高区 6 m/s / 中区 5 m/s / 低区 3.5 m/s）+ 駐車場・低層2基"],
       ["VIP", "1基"],
       ["サービス", "貨物・防災 2基"],
       ["エスカレーター", "地下鉄直結 2基"],
-      ["空調", "VAV + 冬季ペリメーター暖房"],
+      ["空調", "VAV空調システム"],
       ["外気", "30 m³/h·人"],
       ["冷却水", "24時間"],
       ["電力", "80〜100 VA/㎡"],
       ["非常用発電", "テナント設置予備"],
-      ["照明", "机上面 500 LUX"],
+      ["照明", "500 LUX"],
     ],
   },
   contact: {
@@ -129,9 +129,9 @@ const ja: Dictionary = {
     email: "メール",
     cta: "今すぐ連絡",
     phonePlaceholder: "15021149003（WeChat 同番号）",
-    emailPlaceholder: "pwj_003@126.com",
+    emailPlaceholder: "pengwj10@tkhealthcare.com",
     mobile: "15021149003",
-    emailAddress: "pwj_003@126.com",
+    emailAddress: "pengwj10@tkhealthcare.com",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",

@@ -4,7 +4,7 @@ const ko: Dictionary = {
   meta: {
     title: "태강보험빌딩 | 彭文静 · 시니어 리싱 매니저",
     description:
-      "루자쭈이 태강보험빌딩 오피스 임대. 연면적 약 9만㎡, 기준층 2508~2666㎡, 지하철 2·9호선. 시니어 리싱 매니저 彭文静.",
+      "루자쭈이 태강보험빌딩 오피스 임대. 연면적 약 9만㎡, 기준층 약 2,500㎡, 지하철 2호선/9호선. 시니어 리싱 매니저 彭文静.",
   },
   brand: {
     name: "태강보험빌딩",
@@ -29,9 +29,9 @@ const ko: Dictionary = {
     aria: "핵심 수치",
     items: [
       { value: "루자쭈이", label: "CBD" },
-      { value: "2 / 9", label: "지하철 2노선" },
+      { value: "2호선/9호선", label: "지하철" },
       { value: "약 9만㎡", label: "연면적" },
-      { value: "2508~2666", label: "기준층㎡" },
+      { value: "약 2,500㎡", label: "기준층" },
     ],
   },
   leed: {
@@ -97,7 +97,7 @@ const ko: Dictionary = {
     items: [
       ["연면적", "약 9만㎡"],
       ["층수", "지상 41 / 지하 4"],
-      ["기준층 면적", "2508~2666 ㎡"],
+      ["기준층 면적", "약 2,500 ㎡"],
       ["전층 효율", "약 70%"],
       ["기준층 천장고", "3.1 m"],
       ["이중 바닥", "150 mm"],
@@ -109,16 +109,16 @@ const ko: Dictionary = {
       ["통신", "이동 / 전신 / 유니콤, VSAT 예비"],
       ["주차", "지하 527"],
       ["엘리베이터", "Schindler PORT"],
-      ["승객용", "오피스 18대(고층 6 / 중층 5 / 저층 3.5 m/s) + 주차·포디엄 2대"],
+      ["승객용", "오피스 18대(고층 6 m/s / 중층 5 m/s / 저층 3.5 m/s) + 주차·포디엄 2대"],
       ["VIP", "1대"],
       ["서비스", "화물·소방 2대"],
       ["에스컬레이터", "지하철 직결 2대"],
-      ["공조", "VAV + 겨울 창가 난방"],
+      ["공조", "VAV 공조 시스템"],
       ["외기", "30 m³/h·인"],
       ["냉각수", "24시간"],
       ["전력", "80~100 VA/㎡"],
       ["예비 발전", "임차인 설치 예비"],
-      ["조명", "데스크 500 LUX"],
+      ["조명", "500 LUX"],
     ],
   },
   contact: {
@@ -129,9 +129,9 @@ const ko: Dictionary = {
     email: "이메일",
     cta: "바로 연락",
     phonePlaceholder: "15021149003 (WeChat 동일 번호)",
-    emailPlaceholder: "pwj_003@126.com",
+    emailPlaceholder: "pengwj10@tkhealthcare.com",
     mobile: "15021149003",
-    emailAddress: "pwj_003@126.com",
+    emailAddress: "pengwj10@tkhealthcare.com",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",

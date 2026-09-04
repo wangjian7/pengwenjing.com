@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pengwenjing.com"),
   title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
   description:
-    "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层2508~2666㎡，2/9号线双线地铁。高级租赁经理彭文静，电话 15021149003（微信同号）。",
+    "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层约2,500㎡，二号线/九号线双线地铁。高级租赁经理彭文静，电话 15021149003（微信同号）。",
   keywords: [
     "泰康保险大厦",
     "泰康大厦",
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
     siteName: "泰康保险大厦租赁 · 彭文静",
     title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
     description:
-      "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层2508~2666㎡。高级租赁经理彭文静，电话 15021149003（微信同号）。",
+      "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层约2,500㎡。高级租赁经理彭文静，电话 15021149003（微信同号）。",
   },
   twitter: {
     card: "summary_large_image",
     title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
     description:
-      "陆家嘴甲级写字楼租赁。约9万平方米，标准层2508~2666㎡。电话 15021149003（微信同号）。",
+      "陆家嘴甲级写字楼租赁。约9万平方米，标准层约2,500㎡。电话 15021149003（微信同号）。",
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ const realEstateAgentJsonLd = {
     "泰康保险大厦（陆家嘴）高级租赁经理。提供看楼安排、租赁方案、平面图咨询、技术参数核对等服务。",
   url: "https://pengwenjing.com",
   telephone: "+8615021149003",
-  email: "pwj_003@126.com",
+  email: "pengwj10@tkhealthcare.com",
   image: "https://pengwenjing.com/assets/hero-tower.jpg",
   address: {
     "@type": "PostalAddress",
@@ -95,7 +95,7 @@ const faqJsonLd = {
       name: "泰康大厦销售的联系方式是什么？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "泰康保险大厦高级租赁经理彭文静，手机/微信 15021149003（微信同号），邮箱 pwj_003@126.com。",
+        text: "泰康保险大厦高级租赁经理彭文静，手机/微信 15021149003（微信同号），邮箱 pengwj10@tkhealthcare.com。",
       },
     },
     {
@@ -111,7 +111,7 @@ const faqJsonLd = {
       name: "泰康大厦的建筑面积和标准层面积是多少？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "泰康保险大厦建筑总面积约9万平方米，标准层面积2508~2666㎡，地上41层/地下4层，整层得房率约70%。",
+        text: "泰康保险大厦建筑总面积约9万平方米，标准层面积约2,500㎡，地上41层/地下4层，整层得房率约70%。",
       },
     },
     {
@@ -119,7 +119,7 @@ const faqJsonLd = {
       name: "泰康大厦租赁怎么联系？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "联系租赁顾问彭文静，手机/微信 15021149003（微信同号），邮箱 pwj_003@126.com。可安排看楼、获取租赁方案和平面图。",
+        text: "联系租赁顾问彭文静，手机/微信 15021149003（微信同号），邮箱 pengwj10@tkhealthcare.com。可安排看楼、获取租赁方案和平面图。",
       },
     },
   ],

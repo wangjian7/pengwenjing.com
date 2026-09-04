@@ -3,7 +3,7 @@ import type { Dictionary } from "./types";
 const zh: Dictionary = {
   meta: {
     title: "泰康保险大厦 | 彭文静 · 高级租赁经理",
-    description: "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层2508~2666㎡，2/9号线双线地铁。高级租赁经理彭文静。",
+    description: "陆家嘴泰康保险大厦办公租赁。约9万平方米，标准层约2,500㎡，二号线/九号线双线地铁。高级租赁经理彭文静。",
   },
   brand: {
     name: "泰康保险大厦",
@@ -28,9 +28,9 @@ const zh: Dictionary = {
     aria: "关键数字",
     items: [
       { value: "陆家嘴", label: "CBD" },
-      { value: "2 / 9", label: "双线地铁" },
+      { value: "二号线/九号线", label: "双线地铁" },
       { value: "约9万㎡", label: "建筑体量" },
-      { value: "2508~2666", label: "标准层㎡" },
+      { value: "约2,500㎡", label: "标准层" },
     ],
   },
   leed: {
@@ -96,7 +96,7 @@ const zh: Dictionary = {
     items: [
       ["建筑总面积", "约 9 万㎡"],
       ["楼层", "地上 41 / 地下 4"],
-      ["标准层面积", "2508~2666 ㎡"],
+      ["标准层面积", "约 2,500 ㎡"],
       ["整层得房率", "约 70%"],
       ["标准层净高", "3.1 m"],
       ["架空地板", "150 mm"],
@@ -108,16 +108,16 @@ const zh: Dictionary = {
       ["通信系统", "移动 / 电信 / 联通，预留 VSAT"],
       ["停车位", "地下 527"],
       ["电梯系统", "迅达 Schindler PORT"],
-      ["客梯", "办公 18 部（高区 6 / 中区 5 / 低区 3.5 m/s）+ 车库及裙房 2 部"],
+      ["客梯", "办公 18 部（高区 6 m/s / 中区 5 m/s / 低区 3.5 m/s）+ 车库及裙房 2 部"],
       ["VIP 电梯", "1 部"],
       ["服务电梯", "2 部货梯兼消防"],
       ["扶梯", "迅达 2 部直通地铁"],
-      ["空调", "VAV + 冬季窗边采暖"],
+      ["空调", "VAV空调系统"],
       ["新风", "30 m³/h·人"],
       ["冷却水", "24 小时"],
       ["供电", "80~100 VA/㎡"],
       ["备用发电", "预留客户自装"],
-      ["照明", "桌面 500 LUX"],
+      ["照明", "500 LUX"],
     ],
   },
   contact: {
@@ -128,9 +128,9 @@ const zh: Dictionary = {
     email: "邮箱",
     cta: "立即联系",
     phonePlaceholder: "15021149003（微信同号）",
-    emailPlaceholder: "pwj_003@126.com",
+    emailPlaceholder: "pengwj10@tkhealthcare.com",
     mobile: "15021149003",
-    emailAddress: "pwj_003@126.com",
+    emailAddress: "pengwj10@tkhealthcare.com",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",
