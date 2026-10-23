@@ -25,6 +25,7 @@ export function HomePage({ locale, dict }: Props) {
           <nav className={styles.navLinks} aria-label={dict.nav.aria}>
             <a href={`/${locale}#building`}>{dict.nav.building}</a>
             <a href={`/${locale}#plans`}>{dict.nav.plans}</a>
+            <a href={`/${locale}/1502a`}>{dict.nav.tour}</a>
             <a href={`/${locale}#contact`}>{dict.nav.contact}</a>
           </nav>
           <LanguageSwitcher locale={locale} label={dict.nav.language} />
@@ -128,6 +129,26 @@ export function HomePage({ locale, dict }: Props) {
             </div>
           ))}
         </dl>
+      </section>
+
+      <section id="tour" className={styles.tour}>
+        <a className={styles.tourCard} href={`/${locale}/1502a`}>
+          <div className={styles.tourStill}>
+            <Image
+              src={asset("v/1502a.jpg")}
+              alt={dict.tour.title}
+              fill
+              sizes="280px"
+            />
+            <span className={styles.tourPlay}>{dict.tour.cta}</span>
+          </div>
+          <div className={styles.tourCopy}>
+            <span>{dict.tour.kicker}</span>
+            <h2>{dict.tour.title}</h2>
+            <p>{dict.tour.line}</p>
+            <em>{dict.tour.duration}</em>
+          </div>
+        </a>
       </section>
 
       <section id="contact" className={styles.contact}>

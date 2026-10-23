@@ -427,6 +427,84 @@
   text-align: right;
 }
 
+.tour {
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 3vw, 1.5rem) 0;
+}
+
+.tourCard {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+  gap: clamp(1.25rem, 4vw, 3.25rem);
+  align-items: center;
+  color: inherit;
+}
+
+.tourStill {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: #121820;
+}
+
+.tourStill img {
+  object-fit: cover;
+  transition: transform 1.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tourCard:hover .tourStill img {
+  transform: scale(1.04);
+}
+
+.tourPlay {
+  position: absolute;
+  left: 0.9rem;
+  bottom: 0.95rem;
+  color: #f4f7f9;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0 -1px 0 rgba(244, 247, 249, 0.72);
+}
+
+.tourCopy span {
+  color: var(--accent-soft);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+}
+
+.tourCopy h2 {
+  max-width: 12ch;
+  margin-top: 0.65rem;
+  font-family: var(--font-display), "Songti SC", "Noto Serif SC", serif;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.tourCopy p {
+  max-width: 16ch;
+  margin-top: 0.85rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+.tourCopy em {
+  display: inline-block;
+  margin-top: 1.15rem;
+  color: var(--bronze);
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -610,6 +688,15 @@
   .contact {
     grid-template-columns: 1fr;
   }
+
+  .tourCard {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .tourStill {
+    width: min(220px, 58vw);
+  }
 }
 
 .page[data-locale="en"] .heroBrand,
@@ -627,7 +714,11 @@
 }
 
 .page[data-locale="en"] .heroLine,
-.page[data-locale="es"] .heroLine {
+.page[data-locale="es"] .heroLine,
+.page[data-locale="en"] .tourCopy h2,
+.page[data-locale="es"] .tourCopy h2,
+.page[data-locale="en"] .tourCopy p,
+.page[data-locale="es"] .tourCopy p {
   letter-spacing: 0.06em;
 }
 
@@ -695,7 +786,8 @@
     animation: none;
   }
 
-  .chapter:hover .chapterMedia img {
+  .chapter:hover .chapterMedia img,
+  .tourCard:hover .tourStill img {
     transform: none;
   }
 }

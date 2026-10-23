@@ -12,6 +12,7 @@ const zh: Dictionary = {
   nav: {
     building: "楼宇",
     plans: "平面",
+    tour: "实景",
     contact: "联系",
     aria: "页面导航",
     language: "语言",
@@ -107,6 +108,22 @@ const zh: Dictionary = {
     emailPlaceholder: "pwj_003@126.com",
     mobile: "15021149003",
     emailAddress: "pwj_003@126.com",
+  },
+  tour: {
+    kicker: "实景",
+    title: "1502A，先看一遍。",
+    line: "单元内部，空置实拍。",
+    cta: "观看视频",
+    duration: "01:23",
+  },
+  unit: {
+    metaTitle: "1502A 实景 | 泰康保险大厦 · 彭文静",
+    metaDescription: "泰康保险大厦 1502A 单元实景。约一分半，看完可直接约实地。",
+    kicker: "1502A",
+    title: "这个单元。",
+    line: "泰康保险大厦 · 空置实拍",
+    note: "约一分半。看完，直接约实地。",
+    back: "返回",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",

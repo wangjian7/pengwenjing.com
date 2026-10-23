@@ -6,6 +6,7 @@ export type Dictionary = {
   nav: {
     building: string;
     plans: string;
+    tour: string;
     contact: string;
     aria: string;
     language: string;
@@ -56,6 +57,22 @@ export type Dictionary = {
     emailPlaceholder: string;
     mobile: string;
     emailAddress: string;
+  };
+  tour: {
+    kicker: string;
+    title: string;
+    line: string;
+    cta: string;
+    duration: string;
+  };
+  unit: {
+    metaTitle: string;
+    metaDescription: string;
+    kicker: string;
+    title: string;
+    line: string;
+    note: string;
+    back: string;
   };
   footer: {
     place: string;

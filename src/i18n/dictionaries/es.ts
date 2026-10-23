@@ -13,6 +13,7 @@ const es: Dictionary = {
   nav: {
     building: "Edificio",
     plans: "Planos",
+    tour: "Tour",
     contact: "Contacto",
     aria: "Navegación",
     language: "Idioma",
@@ -108,6 +109,23 @@ const es: Dictionary = {
     emailPlaceholder: "pwj_003@126.com",
     mobile: "15021149003",
     emailAddress: "pwj_003@126.com",
+  },
+  tour: {
+    kicker: "Tour",
+    title: "1502A, véalo primero.",
+    line: "La unidad, vacía, tal como está.",
+    cta: "Ver el vídeo",
+    duration: "01:23",
+  },
+  unit: {
+    metaTitle: "Recorrido 1502A | Torre Taikang Insurance",
+    metaDescription:
+      "Recorrido de la unidad 1502A en la Torre Taikang Insurance. Un minuto y medio, y luego la visita.",
+    kicker: "1502A",
+    title: "Esta unidad.",
+    line: "Torre Taikang Insurance · vacía",
+    note: "Un minuto y medio. Después, la visita.",
+    back: "Volver",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",

@@ -13,6 +13,7 @@ const ja: Dictionary = {
   nav: {
     building: "ビル",
     plans: "平面",
+    tour: "実景",
     contact: "連絡",
     aria: "ページナビ",
     language: "言語",
@@ -108,6 +109,22 @@ const ja: Dictionary = {
     emailPlaceholder: "pwj_003@126.com",
     mobile: "15021149003",
     emailAddress: "pwj_003@126.com",
+  },
+  tour: {
+    kicker: "実景",
+    title: "1502A、まず見る。",
+    line: "空室のまま、室内をそのまま。",
+    cta: "動画を見る",
+    duration: "01:23",
+  },
+  unit: {
+    metaTitle: "1502A 実景 | 泰康保険大厦 · 彭文静",
+    metaDescription: "泰康保険大厦 1502A の室内動画。およそ一分半。内覧は直接ご連絡を。",
+    kicker: "1502A",
+    title: "この区画。",
+    line: "泰康保険大厦 · 空室実拍",
+    note: "およそ一分半。見たあと、内覧を。",
+    back: "戻る",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",

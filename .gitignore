@@ -33,3 +33,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# HD unit video is larger than Pages (25 MiB) and GitHub (100 MB). Serve it from R2.
+media/

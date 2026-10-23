@@ -13,6 +13,7 @@ const ko: Dictionary = {
   nav: {
     building: "빌딩",
     plans: "평면",
+    tour: "실경",
     contact: "연락",
     aria: "페이지 탐색",
     language: "언어",
@@ -108,6 +109,22 @@ const ko: Dictionary = {
     emailPlaceholder: "pwj_003@126.com",
     mobile: "15021149003",
     emailAddress: "pwj_003@126.com",
+  },
+  tour: {
+    kicker: "실경",
+    title: "1502A, 먼저 보세요.",
+    line: "공실 그대로의 내부.",
+    cta: "영상 보기",
+    duration: "01:23",
+  },
+  unit: {
+    metaTitle: "1502A 실경 | 태강보험빌딩 · 彭文静",
+    metaDescription: "태강보험빌딩 1502A 내부 영상. 약 1분 반. 보고 나면 현장 방문.",
+    kicker: "1502A",
+    title: "이 유닛.",
+    line: "태강보험빌딩 · 공실 실사",
+    note: "약 1분 반. 보고 나면, 현장을.",
+    back: "돌아가기",
   },
   footer: {
     place: "Taikang Insurance Tower · Lujiazui",
