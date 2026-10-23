@@ -37,12 +37,11 @@
   letter-spacing: 0.12em;
 }
 
-.brandMeta {
+.brandPerson {
   color: var(--ink-faint);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .back {

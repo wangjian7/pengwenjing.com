@@ -9,14 +9,12 @@ type Props = {
 };
 
 export function UnitPage({ locale, dict }: Props) {
-  const tel = dict.hotline.replace(/-/g, "");
-
   return (
     <main className={styles.page} data-locale={locale}>
       <header className={styles.nav}>
         <a className={styles.brand} href={`/${locale}`}>
           <span className={styles.brandName}>{dict.brand.name}</span>
-          <span className={styles.brandMeta}>{dict.brand.meta}</span>
+          <span className={styles.brandPerson}>{dict.brand.person}</span>
         </a>
         <div className={styles.navCluster}>
           <a className={styles.back} href={`/${locale}`}>
@@ -45,10 +43,6 @@ export function UnitPage({ locale, dict }: Props) {
           <p className={styles.note}>{dict.unit.note}</p>
 
           <div className={styles.details}>
-            <a href={`tel:${tel}`}>
-              <span>{dict.contact.hotline}</span>
-              <strong>{dict.hotline}</strong>
-            </a>
             <a href={`tel:${dict.contact.mobile}`}>
               <span>{dict.contact.phone}</span>
               <strong>{dict.contact.phonePlaceholder}</strong>
